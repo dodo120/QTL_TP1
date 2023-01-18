@@ -79,7 +79,7 @@ public class CalculatriceTest {
 	
 	
 	@ParameterizedTest
-    @CsvFileSource(resources="~/test.csv")
+    @CsvFileSource(resources="/test.csv")
     void testCsvFileSource(int a, int b, int expected) {
 		Calculatrice calculatrice = new Calculatrice();
         int result = calculatrice.addition(a, b);
